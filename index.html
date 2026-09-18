@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOID — Визуальный мод для Minecraft</title>
+  <meta name="description" content="VOID — визуальный мод для Minecraft с красивыми эффектами и функциями для PVP и PVE. Скачай лаунчер и почувствуй разницу в бою.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23080314'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%237c3aed'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="logo">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#080314"/>
+          <circle cx="16" cy="16" r="7" fill="url(#lg)"/>
+          <defs>
+            <linearGradient id="lg" x1="9" y1="9" x2="23" y2="23">
+              <stop stop-color="#7c3aed"/><stop offset="1" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>VOID<span class="logo__dot">.</span></span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html" class="nav__link active">Главная</a>
+        <a href="download.html" class="nav__link">Скачать</a>
+        <a href="https://t.me/OrbitClient12" target="_blank" rel="noopener" class="nav__link">Телеграм</a>
+      </nav>
+      <a href="download.html" class="btn btn--small">Скачать</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html">Главная</a>
+      <a href="download.html">Скачать</a>
+      <a href="https://t.me/OrbitClient12" target="_blank" rel="noopener">Телеграм</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__tag reveal">ВИЗУАЛЬНЫЙ МОД ДЛЯ MINECRAFT</p>
+        <h1 class="hero__title reveal">Почувствуй<br><span class="gradient-text">силу боя</span></h1>
+        <p class="hero__sub reveal">
+          VOID — визуальный мод с красивыми эффектами и функциями для PVP и PVE.
+          Яркие удары, металлические kill'ы, чистый обзор и стабильный FPS в любой битве.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="download.html" class="btn">Скачать бесплатно</a>
+          <a href="https://t.me/OrbitClient12" target="_blank" rel="noopener" class="btn btn--ghost">Телеграм-сообщество</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat">
+            <span class="stat__num">30+</span>
+            <span class="stat__label">эффектов и функций</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">PVP</span>
+            <span class="stat__label">и PVE-функции в комплекте</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">+40%</span>
+            <span class="stat__label">FPS благодаря оптимизации</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Что внутри</h2>
+          <p>Всё настраивается из одного меню мода. Никаких шейдеров — только эффекты, которые помогают в бою и радуют глаз.</p>
+        </div>
+        <div class="grid">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+            </div>
+            <h3>Эффекты удара</h3>
+            <p>Красивые частицы при попадании по врагу. Каждый хит ощущается и виден чётко.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m13 2-3 5h4l-4 8h4l-6 7 10-15h-4l4-5z"/></svg>
+            </div>
+            <h3>Kill-эффекты</h3>
+            <p>Эффекты и частицы при убийстве. Финальный удар выглядит эпично в PVP и PVE.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="17.5" cy="4" rx="3" ry="2.4"/><path d="M17.5 6.4V9M12 2c-2 3-3 5-3 8a4 4 0 0 0 8 0c0-3-1-5-3-8zM2 13c2-2 4-2 6 0M2 18c3-2 6-2 9 0"/><path d="M5 4c2 1 3 3 3 5"/></svg>
+            </div>
+            <h3>Чистый обзор</h3>
+            <p>Убирай туман и лишние частицы дождя — видимость в бою важнее всего.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 11l2 2 4-4"/></svg>
+            </div>
+            <h3>PVE-функции</h3>
+            <p>Индикаторы урона по мобам, эффекты критов и понятная картина боя с боссами.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+            </div>
+            <h3>Оптимизация</h3>
+            <p>Лёгкий мод без шейдеров. Стабильный FPS даже в замесах на 1.8 и на новых версиях.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>Полная настройка</h3>
+            <p>Гибкое меню мода: включай и выключай каждую функцию, сохраняй свои пресеты.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2>Как это выглядит</h2>
+          <p>Каждый эффект в VOID работает на результат и выглядит стильно.</p>
+        </div>
+        <div class="shots">
+          <figure class="shot reveal">
+            <div class="shot__img">
+              <div class="shot__ph" data-label="ЭФФЕКТ УДАРА"></div>
+            </div>
+            <figcaption>Яркие частицы при каждом попадании</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <div class="shot__img">
+              <div class="shot__ph" data-label="KILL-ЭФФЕКТ"></div>
+            </div>
+            <figcaption>Зрелищный эффект финального удара</figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <div class="shot__img">
+              <div class="shot__ph" data-label="ЧИСТЫЙ ОБЗОР"></div>
+            </div>
+            <figcaption>Максимальная видимость в бою</figcaption>
+          </figure>
+        </div>
+        <p class="note reveal">Вставь сюда свои скриншоты — просто замени пустые плитки на изображения 16:9.</p>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <h2>Частые вопросы</h2>
+        </div>
+        <div class="acc">
+          <details class="acc__item reveal">
+            <summary>Это шейдеры?</summary>
+            <p>Нет. VOID — это мод с визуальными эффектами и функциями для PVP/PVE. Он не нагружает видеокарту шейдерами и работает даже на слабых ПК.</p>
+          </details>
+          <details class="acc__item reveal">
+            <summary>Какая версия Minecraft нужна?</summary>
+            <p>VOID работает на популярных версиях для PVP. Все сборки проверяются в лаунчере VOID, так что просто запусти и играй.</p>
+          </details>
+          <details class="acc__item reveal">
+            <summary>Какие функции для PVP и PVE есть?</summary>
+            <p>Эффекты удара и kill'ов, чистый обзор без тумана, индикаторы урона по мобам, эффекты критов и многое другое. Всё настраивается в меню мода.</p>
+          </details>
+          <details class="acc__item reveal">
+            <summary>Это бесплатно?</summary>
+            <p>Да. Мод, лаунчер и все обновления полностью бесплатны. Поддержать проект можно в Телеграме.</p>
+          </details>
+          <details class="acc__item reveal">
+            <summary>Будет ли работать на слабом ПК?</summary>
+            <p>Да, это лёгкий мод. А если у тебя старый ПК, в настройках есть режим «Жёсткая оптимизация» для ещё большего FPS.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container cta__inner reveal">
+        <h2>Готов почувствовать разницу?</h2>
+        <p>Скачай лаунчер VOID и запусти мод с эффектами и функциями для PVP и PVE за 2 минуты.</p>
+        <div class="hero__actions">
+          <a href="download.html" class="btn">Скачать бесплатно</a>
+          <a href="https://t.me/OrbitClient12" target="_blank" rel="noopener" class="btn btn--ghost">Мы в Телеграме</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="logo">
+          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="6" fill="#080314"/>
+            <circle cx="16" cy="16" r="7" fill="url(#lgf)"/>
+            <defs>
+              <linearGradient id="lgf" x1="9" y1="9" x2="23" y2="23">
+                <stop stop-color="#7c3aed"/><stop offset="1" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>VOID<span class="logo__dot">.</span></span>
+        </a>
+        <p class="footer__text">Визуальный мод для Minecraft.<br>Не аффилирован с Mojang или Microsoft.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Проект</h4>
+        <a href="index.html">Главная</a>
+        <a href="download.html">Скачать</a>
+      </div>
+      <div class="footer__col">
+        <h4>Сообщество</h4>
+        <a href="https://t.me/OrbitClient12" target="_blank" rel="noopener">Телеграм</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 VOID. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
