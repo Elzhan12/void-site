@@ -161,16 +161,15 @@ img, svg { display: block; }
 .logo svg { flex-shrink: 0; filter: drop-shadow(0 0 14px var(--glow)); }
 
 .logo__img {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
   object-fit: cover;
   flex-shrink: 0;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo__img--sm { width: 28px; height: 28px; border-radius: 8px; }
+.logo__img--sm { width: 26px; height: 26px; }
 
 .logo__dot { color: var(--accent); }
 
